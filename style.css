@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  /* Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  /* font-family: "Big Shoulders Display", cursive; */
+}
+
+body {
+  font-size: 15px;
+  background: var(--Very-light-gray);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  padding: 40px;
+}
+
+.card > img {
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--Very-light-gray);
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--Transparent-white);
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.card > p {
+  margin-bottom: 50px;
+}
+
+button {
+  color: var(--Very-light-gray);
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid #fff;
+  cursor: pointer;
+  /* margin: 0 0 20px 70px; */
+}
+/* BUTTON HOVER */
+button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+/* END OF BUTTON HOVER */
+
+/* COLORS */
+.orange {
+  color: var(--Bright-orange);
+}
+.dcyan {
+  color: var(--Dark-cyan);
+}
+.vdcyan {
+  color: var(--Very-dark-cyan);
+}
+.bg-orange {
+  background: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+.bg-dcyan {
+  background: var(--Dark-cyan);
+}
+.bg-vdcyan {
+  background: var(--Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+/* END OF COLORS */
+
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  .bg-orange {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .bg-vdcyan {
+    border-radius: 0 0 10px 10px;
+  }
+}
